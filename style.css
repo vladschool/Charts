@@ -645,8 +645,20 @@ body {
   padding: 0 1rem;
 }
 
+@media screen and (max-width: 33rem) {
+  .chart-bar__x-axis-list {
+    padding: 0 0.7rem;
+  }
+}
+
 .chart-bar__x-axis-list_kps {
   padding: 0 2.5rem;
+}
+
+@media screen and (max-width: 33rem) {
+  .chart-bar__x-axis-list_kps {
+    padding: 0 1rem;
+  }
 }
 
 .dashboard__rating-kps-btn-groups {
