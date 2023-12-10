@@ -204,11 +204,18 @@
                   </button>
                 </header>
               </div>
-              <div class="progress-wrapper">
-                <div class="progress"></div>
-                <div class="progress-value">
-                  <div class="progress-value__min">0</div>
-                  <div class="progress-value__max">100</div>
+              <div class="dashboard-bar">
+                <div class="dashboard-bar__progress">
+                  <div class="dashboard-bar__barOverflow">
+                    <div class="dashboard-bar__lines"></div>
+                    <img
+                      class="dashboard-bar__line-circle"
+                      src="data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='rgba(255, 255, 255, 1)' stroke-width='25' stroke-dasharray='3%2c 1' stroke-dashoffset='44' stroke-linecap='butt'/%3e%3c/svg%3e"
+                      alt="#"
+                    />
+                  </div>
+                  <div class="dashboard-bar__min">0</div>
+                  <div class="dashboard-bar__max">100</div>
                 </div>
               </div>
             </div>
@@ -225,34 +232,25 @@
                   </button>
                 </header>
               </div>
-              <div class="dashboard__emoji-mzi-main">
-                <div class="dashboard__emoji-mzi-progress">
-                  <div class="dashboard__circle-wrap">
-                    <div class="dashboard__circle">
-                      <div class="dashboard__mask dashboard__full">
-                        <div class="dashboard__fill"></div>
-                      </div>
-                      <div class="dashboard__mask dashboard__half">
-                        <div class="dashboard__fill"></div>
-                      </div>
-                      <div class="dashboard__inside-circle"></div>
-                    </div>
+              <div class="dashboard-bar">
+                <div class="dashboard-bar__progress">
+                  <div class="dashboard-bar__barOverflow">
+                    <div class="dashboard-bar__bar"></div>
                   </div>
                   <img
                     src="./img/angry.svg"
-                    alt="angry-icon"
-                    class="dashboard__angry-icon"
+                    alt="angry"
+                    class="dashboard-bar__angry-icon"
                   />
                   <img
                     src="./img/good.svg"
-                    alt="good-icon"
-                    class="dashboard__good-icon"
+                    alt="good"
+                    class="dashboard-bar__good-icon"
                   />
-
                   <img
                     src="./img/amazing.svg"
-                    alt="amazing-icon"
-                    class="dashboard__amazing-icon"
+                    alt="amazing"
+                    class="dashboard-bar__amazing-icon"
                   />
                 </div>
               </div>
@@ -369,7 +367,7 @@
                   </button>
                 </header>
               </div>
-              <div class="chart-bar">
+              <div class="chart-bar chart-bar_kps">
                 <div class="chart-bar__y-axis">
                   <ul class="chart-bar__y-axis-list">
                     <li class="chart-bar__y-axis-item"><span>100%</span></li>
@@ -379,13 +377,13 @@
                     <li class="chart-bar__y-axis-item"><span>0%</span></li>
                   </ul>
                 </div>
-                <div class="chart-bar__main">
+                <div class="chart-bar__main chart-bar__main_kps">
                   <div class="chart-bar__main-group chart-bar__main-group-kps">
                     <div class="bar bar_large h-80"></div>
+                    <div class="bar bar_large h-70"></div>
                     <div class="bar bar_large h-20"></div>
-                    <div class="bar bar_large h-30"></div>
-                    <div class="bar bar_large h-80"></div>
-                    <div class="bar bar_large h-10"></div>
+                    <div class="bar bar_large h-60"></div>
+                    <div class="bar bar_large h-20"></div>
                   </div>
                   <ul class="chart-bar__line-list">
                     <li class="chart-bar__line-item"></li>
@@ -397,11 +395,31 @@
                 </div>
                 <div class="chart-bar__x-axis">
                   <ul class="chart-bar__x-axis-list chart-bar__x-axis-list_kps">
-                    <li class="chart-bar__x-axis-item"><span>KP 1</span></li>
-                    <li class="chart-bar__x-axis-item"><span>KP 2</span></li>
-                    <li class="chart-bar__x-axis-item"><span>KP 3</span></li>
-                    <li class="chart-bar__x-axis-item"><span>KP 4</span></li>
-                    <li class="chart-bar__x-axis-item"><span>KP 2</span></li>
+                    <li
+                      class="chart-bar__x-axis-item chart-bar__x-axis-item_kps"
+                    >
+                      <span>KP 1</span>
+                    </li>
+                    <li
+                      class="chart-bar__x-axis-item chart-bar__x-axis-item_kps"
+                    >
+                      <span>KP 2</span>
+                    </li>
+                    <li
+                      class="chart-bar__x-axis-item chart-bar__x-axis-item_kps"
+                    >
+                      <span>KP 3</span>
+                    </li>
+                    <li
+                      class="chart-bar__x-axis-item chart-bar__x-axis-item_kps"
+                    >
+                      <span>KP 4</span>
+                    </li>
+                    <li
+                      class="chart-bar__x-axis-item chart-bar__x-axis-item_kps"
+                    >
+                      <span>KP 2</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -466,6 +484,7 @@
         </div>
       </main>
     </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
