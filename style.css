@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --main-color: #ecedff;
+}
+
 body {
   font-family: Inter, Helvetica, Arial, sans-serif;
-  background-color: #ecedff;
+  background-color: var(--main-color);
 }
 
 .h-10 {
@@ -49,7 +53,7 @@ body {
 
 .page {
   padding-top: 4rem;
-  background-color: #ecedff;
+  background-color: var(--main-color);
 }
 
 .page__header {
@@ -370,7 +374,7 @@ body {
   height: 200%;
   border-radius: 50%;
   box-sizing: border-box;
-  border: 0.75rem solid #ecedff;
+  border: 0.75rem solid var(--main-color);
   border-bottom-color: #0bf;
   border-right-color: #0bf;
   transform: rotate(45deg);
@@ -380,7 +384,7 @@ body {
 .dashboard-bar__max {
   position: absolute;
   font-size: 0.625rem;
-  color: #ecedff;
+  color: var(--main-color);
 }
 
 .dashboard-bar__min {
@@ -401,7 +405,7 @@ body {
   height: 200%;
   border-radius: 50%;
   box-sizing: border-box;
-  border: 0.75rem solid #ecedff;
+  border: 0.75rem solid var(--main-color);
   border-bottom-color: #0bf;
   border-right-color: #0bf;
   transform: rotate(45deg);
@@ -492,7 +496,7 @@ body {
   left: -1.5rem;
   right: 0;
   height: 0.063rem;
-  background-color: #ecedff;
+  background-color: var(--main-color);
 }
 
 .chart-bar {
@@ -539,7 +543,7 @@ body {
 .chart-bar__line-item {
   height: 0.063rem;
   width: 100%;
-  background-color: #ecedff;
+  background-color: var(--main-color);
 }
 
 .chart-bar__x-axis {
@@ -588,7 +592,7 @@ body {
 .dashboard__rating-kps-btn-groups {
   display: flex;
   gap: 0.5rem;
-  margin-top: 1.2rem;
+  margin: 1.2rem;
   align-items: flex-end;
   justify-content: center;
 }
@@ -628,7 +632,7 @@ body {
   height: 0.938rem;
   border-radius: 0.5rem;
   width: 0.938rem;
-  background-color: #ecedff;
+  background-color: var(--main-color);
 }
 
 @media screen and (max-width: 33rem) {
@@ -638,7 +642,7 @@ body {
 }
 
 .label__container:hover .label__input ~ .label__checkmark {
-  background-color: #ecedff;
+  background-color: var(--main-color);
 }
 
 .label__container:nth-child(1) .label__input:checked ~ .label__checkmark {
